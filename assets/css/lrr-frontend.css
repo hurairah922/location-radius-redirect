@@ -1,0 +1,57 @@
+.lrr-order-link {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.lrr-order-btn {
+  cursor: pointer;
+}
+
+.lrr-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+}
+
+.lrr-modal.is-open {
+  display: block;
+}
+
+.lrr-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.lrr-modal__dialog {
+  position: relative;
+  max-width: 520px;
+  margin: 12vh auto 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px 18px 14px 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.lrr-modal__title {
+  margin: 0 0 8px 0;
+}
+
+.lrr-modal__message {
+  margin: 0 0 14px 0;
+  line-height: 1.4;
+}
+
+.lrr-modal__btn {
+  cursor: pointer;
+  border: 0;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #111;
+  color: #fff;
+}
+
+body.lrr-modal-open {
+  overflow: hidden;
+}
